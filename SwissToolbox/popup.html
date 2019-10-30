@@ -4,19 +4,22 @@
 <head>
   <title>Swiss Toolbox</title>
   <script src="jquery-3.1.0.min.js"></script>
-  <script src="popup.js"></script>
   <script src="jscolor.js"></script>
-  
-  <style>
-    body {
-      min-width: 250px;
-      min-height: 150px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <input type="text" id="fontColor" class="jscolor" value="ffcc00">
-</body>
+    <div>
+      <form class="colorPicker">
+        <label>ColorPicker</label><br>
+        <input type="text" id="fontColor" class="jscolor" value="000000" onclick="hideColorpickerLabel()">
+      </form>
+      <script src="colorpicker.js"></script>
+    </div><br>
 
-</html>
+    <div>
+      <img id="dice" src="images/d6.png">
+      <button id="rollButton">Click to Roll!</button>
+      <script src="roll.js"></script>
+    </div>
+</body></html>

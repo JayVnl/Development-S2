@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+
+body {
+  margin:0;
+  padding:10px;
+  height: 450px;
+  width: 240px;
+  background-color: #464646;
+  border: 2px solid white;
+}
+
+.colorPicker label {
+  color: white;
+  font-family: 'Saira Stencil One';
+  font-size: 16px;
+  
+}
+
+button {
+  height: 30px;
+  width: 128px;
+  position: center;
+  transform: scale(1);
+  transition: transform .3s;
+  border-radius: 20px;
+  font-family: 'Saira Stencil One';
+  font-size: 15px;
+  border: 2px solid black;
+}
+
+button:hover {
+  transform: scale(1.07);
+  transition: transform .3s;
+  background-color: black;
+  color:white;
+  border: 2px solid white;
+  cursor: pointer;
+}
