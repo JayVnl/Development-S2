@@ -1,19 +1,75 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 
 body {
-  margin:0;
-  padding:10px;
+  margin: 0;
+  padding: 10px;
   height: 450px;
   width: 240px;
   background-color: #464646;
   border: 2px solid white;
+  display:flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
 }
 
-.colorPicker label {
+p {
+  margin:0;
+  padding:0;
   color: white;
   font-family: 'Saira Stencil One';
+}
+
+.colorPicker {
+  border: 1px solid white;
+  height: 59px;
+}
+
+.colorPicker form input {
+  width: 25%;
+}
+
+.colorPicker form label {
+  font-family: 'Saira Stencil One';
+  font-size: 22px;
+  background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-size: 800% 800%;
+  color: transparent;
+  margin-left: 60px;
+  animation: rainbow 5s ease infinite;
+}
+
+.colorPicker form span {
+  font-family: 'Saira Stencil One';
+  color: white;
   font-size: 16px;
-  
+  margin-left: 10px;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0%
+  }
+
+  50% {
+    background-position: 100%
+  }
+
+  100% {
+    background-position: 0%
+  }
+}
+
+.dice {
+  margin-top: 5px;
+  height: 200px;
+  border: 1px solid white;
+  text-align: center;
+  flex: 0 0 140px;
+}
+
+.dice p {
+  font-size: 20px;
 }
 
 button {
@@ -29,10 +85,23 @@ button {
 }
 
 button:hover {
-  transform: scale(1.07);
+  transform: scale(1.04);
   transition: transform .3s;
   background-color: black;
-  color:white;
+  color: white;
   border: 2px solid white;
   cursor: pointer;
+}
+
+.switches {
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 200px;
+  border: 1px solid white;
+  text-align: center;
+  flex: 0 0 91px;
+}
+
+.switches p {
+  font-size: 20px;
 }

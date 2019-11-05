@@ -5,21 +5,32 @@
   <title>Swiss Toolbox</title>
   <script src="jquery-3.1.0.min.js"></script>
   <script src="jscolor.js"></script>
+  <script src="NU_Zoom.js"></script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div>
-      <form class="colorPicker">
-        <label>ColorPicker</label><br>
-        <input type="text" id="fontColor" class="jscolor" value="000000" onclick="hideColorpickerLabel()">
-      </form>
-      <script src="colorpicker.js"></script>
-    </div><br>
+  <div class="colorPicker">
+    <form>
+      <label>ColorPicker</label><br>
+      <input type="text" id="fontColor" class="jscolor" value="000000" onclick="hideColorpickerLabel()">
+      <span>Click on input field</span>
+    </form>
+    <script src="colorpicker.js"></script>
+  </div>
 
-    <div>
-      <img id="dice" src="images/d6.png">
-      <button id="rollButton">Click to Roll!</button>
-      <script src="roll.js"></script>
-    </div>
-</body></html>
+  <div class="dice">
+    <p>Dice Roll</p>
+    <img id="dice" src="images/d6.png">
+    <button id="rollButton">Click to Roll!</button>
+    <script src="roll.js"></script>
+  </div>
+
+  <div class="switches">
+    <p>Switch</p>
+    
+  </div> 
+</body>
+
+</html>
