@@ -5,7 +5,9 @@
   <title>Swiss Toolbox</title>
   <script src="jquery-3.1.0.min.js"></script>
   <script src="jscolor.js"></script>
-  <script src="NU_Zoom.js"></script>
+
+  <script src="ajax-jquery-2.1.1.min.js"></script>
+  <script src="switches.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -27,10 +29,22 @@
     <script src="roll.js"></script>
   </div>
 
-  <div class="switches">
-    <p>Switch</p>
-    
-  </div> 
-</body>
+  <div>
+    <div class="switchZoom">
+      <p>Zoom</p>
+      <label>
+        <input type="checkbox" name="checkboxZoom" class="checkbox">
+        <div class="switch"></div>
+      </label>
+    </div>
 
-</html>
+    <div class="switchRandom">
+      <p>Rand</p>
+      <label>
+        <input type="checkbox" name="checkboxRandom" class="checkbox">
+        <div class="switch"></div>
+      </label>
+    </div>
+  </div>
+
+</body></html>
