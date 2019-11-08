@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/blackspirit.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box-main {
+    position: absolute;
+    display: flex;
+    width: 88%;
+    height: 80%;
+    background: rgba(0,0,0,.8);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-flow: row wrap;
+    align-items: center;
+} 
+
+.box-medium {
+    background: #464646;
+    flex: 0 0 85%;
+    height: 20%;
+    margin: 50px;
+}
+
+.box-small {
+    
+}
