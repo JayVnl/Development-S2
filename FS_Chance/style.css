@@ -15,7 +15,7 @@ body {
     color: white;
 }
 
-body p {
+.title {
     font-family: 'Newtype';
     text-align: center;
     font-size: 650%;
@@ -44,3 +44,47 @@ body p {
     border: 3px solid;
     border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
 }
+
+/* About box */
+.about-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform: translateX(12%);
+    margin-top: 10%;
+}
+
+.about-img {
+    text-align: center;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.about-titletext {
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'Newtype';
+    font-size: 540%;
+}
+
+.about-textarea {
+    
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    padding-left: 13%;
+    padding-top: 8%;
+    padding-right: 12%;
+    font-family: 'Newtype';
+    font-size: 175%;
+}
+
+.about-social {
+    display: flex;
+    justify-content:space-around;
+    margin: 6%;
+}
+
+/* Calculate box */
