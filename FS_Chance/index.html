@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2"></script>
-    <script src="dropdown.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2"></script>
+  <script src="dropdown.js"></script>
 </head>
 
 <body>
-    <p class="title">Failstack Calculator</p>
-    <div class="box-main">
-        <div class="box-medium">
+  <p class="title">Failstack Calculator</p>
+  <div class="box-main">
 
-            <!-- About img and title -->
-            <div class="about-title">
-                <div class="about-img">
-                    <img src="images/logo_about.png">
-                </div>
-                <div class="about-titletext">
-                    <p>About</p>
-                </div>
-            </div>
+    <!-- 1st box -->
+    <div class="box-medium">
 
-            <!-- About text area -->
-            <div class="about-textarea">
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit
-                        amet, consectetur
-                        adipiscing elit, sed do
-                        eiusmod tempor incididunt
-                        ut labore et dolore magna
-                        aliqua. Vitae tempus quam
-                        pellentesque nec nam
-                        aliquam. Bibendum est
-                        ultricies integer quis
-                        auctor elit sed vulputate.
-                    </p>
-                </div>
-            </div>
-
-            <!-- About social media logo's -->
-            <div class="about-social">
-                <img src="images/twitter.png">
-                <img src="images/youtube.png">
-                <img src="images/linkedin.png">
-            </div>
+      <!-- About img and title -->
+      <div class="about-title">
+        <div class="about-img">
+          <img src="images/logo_about.png">
         </div>
-        <div class="box-medium">
-            <div class="box-calc">
-                
-                <p>Item Type:</p>
-                <div class="flex-item-type">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                
-                <p>Item Grade:</p>
-                <div class="flex-item-grade">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                
-                <p>Item Level:</p>
-                <ul class="dropdown">
-                    <li><a href="#">Choose a level</a>
-                        <ul class="sub_menu">
-                            <li><a href="#">0</a></li>
-                            <li><a href="#">+1</a></li>
-                            <li><a href="#">+2</a></li>
-                            <li><a href="#">+3</a></li>
-                            <li><a href="#">+4</a></li>
-                            <li><a href="#">+5</a></li>
-                            <li><a href="#">+6</a></li>
-                            <li><a href="#">+7</a></li>
-                            <li><a href="#">+8</a></li>
-                            <li><a href="#">+9</a></li>
-                            <li><a href="#">+10</a></li>
-                            <li><a href="#">+11</a></li>
-                            <li><a href="#">+12</a></li>
-                            <li><a href="#">+13</a></li>
-                            <li><a href="#">+14</a></li>
-                            <li><a href="#">+15</a></li>
-                            <li><a href="#">Pri</a></li>
-                            <li><a href="#">Duo</a></li>
-                            <li><a href="#">Tri</a></li>
-                            <li><a href="#">Tet</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                
-                <p>Failstacks:</p>
-                <input type="number" name="quantity" min="0" max="200" required><br>
-                
-                <a class="btn-calculate">Calculate</a> 
-            </div>
+        <div class="about-titletext">
+          <p>About</p>
         </div>
+      </div>
 
-        <div class="box-medium">
-            d
+      <!-- About text area -->
+      <div class="about-textarea">
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit
+            amet, consectetur
+            adipiscing elit, sed do
+            eiusmod tempor incididunt
+            ut labore et dolore magna
+            aliqua. Vitae tempus quam
+            pellentesque nec nam
+            aliquam. Bibendum est
+            ultricies integer quis
+            auctor elit sed vulputate.
+          </p>
         </div>
+      </div>
+
+      <!-- About social media logo's -->
+      <div class="about-social">
+        <img src="images/twitter.png">
+        <img src="images/youtube.png">
+        <img src="images/linkedin.png">
+      </div>
     </div>
+
+    <!-- 2nd box -->
+    <div class="box-medium">
+      <div class="box-calc">
+
+        <!-- Item type -->
+        <p>Item Type:</p>
+        <div class="flex-item-type">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Item grade -->
+        <p>Item Grade:</p>
+        <div class="flex-item-grade">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!-- Item level -->
+        <p>Item Level:</p>
+        <ul class="dropdown">
+          <li><a href="#">Choose a level</a>
+            <ul class="sub_menu">
+              <li><a href="#">0</a></li>
+              <li><a href="#">+1</a></li>
+              <li><a href="#">+2</a></li>
+              <li><a href="#">+3</a></li>
+              <li><a href="#">+4</a></li>
+              <li><a href="#">+5</a></li>
+              <li><a href="#">+6</a></li>
+              <li><a href="#">+7</a></li>
+              <li><a href="#">+8</a></li>
+              <li><a href="#">+9</a></li>
+              <li><a href="#">+10</a></li>
+              <li><a href="#">+11</a></li>
+              <li><a href="#">+12</a></li>
+              <li><a href="#">+13</a></li>
+              <li><a href="#">+14</a></li>
+              <li><a href="#">+15</a></li>
+              <li><a href="#">Pri</a></li>
+              <li><a href="#">Duo</a></li>
+              <li><a href="#">Tri</a></li>
+              <li><a href="#">Tet</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Failstacks -->
+        <div class="failstacks">
+          <p>Failstacks:</p>
+          <input type="number" name="quantity" min="0" max="200" required><br>
+        </div>
+
+        <!-- Button -->
+        <div class="calculate">
+          <a class="btn-calculate">Calculate</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3rd box -->
+    <div class="box-medium">
+      <div class="box-chance">
+        <img src="images/logo_percentage.png">
+        <p class="box-chance-title">Chance of Success</p>
+        <div id="myProgress"><p id="percentage">60%</p>
+          <div id="myBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body></html>

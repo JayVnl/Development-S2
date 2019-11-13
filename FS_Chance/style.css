@@ -1,250 +1,300 @@
 @font-face {
-    font-family: "Newtype";
-    src: url("fonts/Newtype/Newtype.otf");
+  font-family: "Newtype";
+  src: url("fonts/Newtype/Newtype.otf");
+}
+
+@font-face {
+  font-family: "PaybAck";
+  src: url("fonts/PaybAck/PaybAck.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 body {
-    background: url(images/blackspirit.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
+  background: url(images/blackspirit.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
 }
 
 .title {
-    font-family: 'Newtype';
-    text-align: center;
-    font-size: 650%;
-    margin-top: 50px;
+  font-family: 'Newtype';
+  text-align: center;
+  font-size: 650%;
+  margin-top: 50px;
 }
 
 .box-main {
-    position: absolute;
-    display: flex;
-    width: 88%;
-    height: 80%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+  position: absolute;
+  display: flex;
+  width: 88%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .box-medium {
-    background: rgba(0, 0, 0, .8);
-    flex: 0 0 510px;
-    height: 90%;
-    margin: 20px;
-    border: 3px solid;
-    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+  background: rgba(0, 0, 0, .8);
+  flex: 0 0 510px;
+  height: 90%;
+  margin: 20px;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
 }
 
-/* About box */
+/* 1st box */
 .about-title {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    transform: translateX(12%);
-    margin-top: 10%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transform: translateX(12%);
+  margin-top: 10%;
 }
 
 .about-img {
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .about-titletext {
-    margin-left: 20px;
-    display: inline-block;
-    font-family: 'Newtype';
-    font-size: 540%;
+  margin-left: 20px;
+  display: inline-block;
+  font-family: 'Newtype';
+  font-size: 540%;
 }
 
 .about-textarea {}
 
 .about-text {
-    display: flex;
-    align-items: center;
-    padding-left: 13%;
-    padding-top: 8%;
-    padding-right: 12%;
-    font-family: 'Newtype';
-    font-size: 175%;
+  display: flex;
+  align-items: center;
+  padding-left: 13%;
+  padding-top: 8%;
+  padding-right: 12%;
+  font-family: 'Newtype';
+  font-size: 175%;
 }
 
 .about-social {
-    display: flex;
-    justify-content: space-around;
-    margin: 6%;
-    cursor: pointer;
-    transform: scale(1.0);
-    transition: .5s;
+  display: flex;
+  justify-content: space-around;
+  margin: 6%;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition: .5s;
 }
 
 .about-social img:hover {
-    transform: scale(1.05);
-    transition: .5s;
+  transform: scale(1.05);
+  transition: .5s;
 }
 
-/* Calculate box */
+/* 2nd box */
 .box-calc {
-    font-family: 'Newtype';
-    font-size: 195%;
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-top: 10%;
+  font-family: 'Newtype';
+  font-size: 195%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 10%;
 }
 
 .box-calc p {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 .flex-item-type {
-    display: flex;
-    width: 50%;
-    height: 50%;
+  display: flex;
+  width: 50%;
+  height: 50%;
 }
 
 .flex-item-type div {
-    flex: 0 0 80px;
-    height: 80px;
-    background: white;
-    margin-top: 2%;
-    margin-right: 10px;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
-    cursor: pointer;
-    transform: scale(1.0);
-    transition: .5s;
+  flex: 0 0 80px;
+  height: 80px;
+  background: white;
+  margin-top: 2%;
+  margin-right: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition: .5s;
+}
+
+.flex-item-type div img {
+  
 }
 
 .flex-item-type div:hover {
-    transform: scale(1.05);
-    transition: .5s;
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 .flex-item-grade {
-    display: flex;
-    width: 50%;
-    height: 50%;
+  display: flex;
+  width: 50%;
+  height: 50%;
 }
 
 .flex-item-grade div {
-    flex: 0 0 80px;
-    height: 80px;
-    background: white;
-    margin-top: 2%;
-    margin-right: 10px;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
-    cursor: pointer;
-    transform: scale(1.0);
-    transition: .5s;
+  flex: 0 0 80px;
+  height: 80px;
+  background: white;
+  margin-top: 2%;
+  margin-right: 10px;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+  cursor: pointer;
+  transform: scale(1.0);
+  transition: .5s;
 }
 
 .flex-item-grade div:hover {
-    transform: scale(1.05);
-    transition: .5s;
+  transform: scale(1.05);
+  transition: .5s;
 }
 
 .dropdown {
-    margin-top: 2%;
+  margin-top: 6px;
+  position: absolute;
 }
 
 .dropdown ul {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 180px;
-    z-index: 10;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  z-index: 10;
 }
 
 .dropdown li {
-    font-weight: bold;
-    width: 270px;
-    background: white;
-    position: relative;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+  font-weight: bold;
+  width: 270px;
+  background: white;
+  position: relative;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
 }
 
 .dropdown a:hover {
-    color: white;
+  color: white;
 }
 
 .dropdown li a {
-    display: block;
-    padding: 15px 15px;
-    color: black;
-    position: relative;
-    z-index: 20;
+  display: block;
+  padding: 15px 15px;
+  color: black;
+  position: relative;
+  z-index: 20;
 }
 
 .dropdown li a:hover,
 .dropdown li a.hover {
-    background: rgba(0,0,0,.9);
-    position: relative;
+  background: rgba(0, 0, 0, .9);
+  position: relative;
 }
 
 .dropdown ul li a {
-    display: block;
-    background: white !important;
+  display: block;
+  background: white !important;
 }
 
 .dropdown ul li a:hover {
-    display: block;
-    background: rgba(0,0,0,.9) !important;
+  display: block;
+  background: rgba(0, 0, 0, .9) !important;
+}
+
+.failstacks {
+  margin-top: 21%;
 }
 
 input[type="number"] {
-    width: 85px;
-    height: 60px;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
-    font-size: 125%;
-    font-family: 'Newtype';
-    padding-left: 15px;
-    margin-top: 2%;
+  width: 85px;
+  height: 60px;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+  font-size: 125%;
+  font-family: 'Newtype';
+  padding-left: 15px;
+  margin-top: 2%;
+}
+
+.calculate {
+  margin-top: 10px; 
+  margin-left: 205px;
 }
 
 .btn-calculate {
-    position: absolute;
-    margin: 10px;
-    padding: 20px 40px;
-    text-align: center;
-    transition: .5s;
-    background-size: 150% auto;
-    color:white;
-    background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
-    background-position: left bottom;
-    cursor: pointer;
-    transform: scale(1.0);
-    right:36%;
-    top: 77%;
-    border-radius: 13px;
+  margin: 10px;
+  padding: 20px 40px;
+  text-align: center;
+  transition: .5s;
+  background-size: 150% auto;
+  color: white;
+  background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
+  background-position: left bottom;
+  cursor: pointer;
+  right: 36%;
+  top: 77%;
+  border-radius: 13px;
 }
 
 .btn-calculate:hover {
-    background-position: right top;
-    transform: scale(1.02);
+  background-position: right top;
+}
+
+/* 3rd box */
+.box-chance img {
+  margin: 11%;
+}
+
+.box-chance-title {
+  font-family: 'Newtype';
+  font-size: 235%;
+  color: white;
+  text-align: center;
+  margin-top: -5%;
+  margin-bottom: 1%;
+}
+
+#myProgress {
+  width: 80%;
+  background-color: #464646;
+  border-radius: 5px;
+  margin: 0% 10%;
+}
+
+#myBar {
+  border-radius: 5px;
+  width: 60%;
+  height: 53px;
+  background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
+}
+
+#percentage {
+  font-family: 'PaybAck';
+  position: absolute;
+  margin-left: 170px;
+  margin-top: 6px;
+  font-size: 240%;
+  text-align: center;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
