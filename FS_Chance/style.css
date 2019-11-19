@@ -1,320 +1,327 @@
 @font-face {
-  font-family: "Newtype";
-  src: url("fonts/Newtype/Newtype.otf");
+    font-family: "Newtype";
+    src: url("fonts/Newtype/Newtype.otf");
 }
 
 @font-face {
-  font-family: "PaybAck";
-  src: url("fonts/PaybAck/PaybAck.ttf");
+    font-family: "PaybAck";
+    src: url("fonts/PaybAck/PaybAck.ttf");
 }
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 body {
-  background: url(images/blackspirit.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  color: white;
-  overflow: hidden;
+    background: url(images/blackspirit.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
 }
 
 .title {
-  font-family: 'Newtype';
-  text-align: center;
-  font-size: 6vw;
-  margin-top: 3vh;
+    font-family: 'Newtype';
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 3vh;
 }
 
 .box-main {
-  position: absolute;
-  display: flex;
-  width: 88vw;
-  height: 80vh;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 3vh;
+    position: absolute;
+    display: flex;
+    width: 88vw;
+    height: 80vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
 }
 
 .box-medium {
-  background: rgba(0, 0, 0, .8);
-  flex: 0 0 26vw;
-  height: 70vh;
-  margin: 1vw;
-  border: 0.2vw solid;
-  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+    background: rgba(0, 0, 0, .8);
+    flex: 0 0 26vw;
+    height: 70vh;
+    margin: 1vw;
+    border: 0.2vw solid;
+    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
 }
 
 /* 1st box */
 .about-title {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  transform: translateX(12%);
-  margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform: translateX(12%);
+    margin-top: 5vh;
 }
 
 .about-img img {
-  text-align: center;
-  display: inline-block;
-  vertical-align: middle;
-  width: 11vh;
-  height: auto;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 11vh;
+    height: auto;
 }
 
 .about-titletext {
-  margin-left: 2vh;
-  display: inline-block;
-  font-family: 'Newtype';
-  font-size: 4.4vw;
+    margin-left: 2vh;
+    display: inline-block;
+    font-family: 'Newtype';
+    font-size: 4.4vw;
 }
 
 .about-textarea {}
 
 .about-text {
-  display: flex;
-  align-items: center;
-  padding-left: 3.3vw;
-  padding-top: 3vh;
-  padding-right: 3vw;
-  font-family: 'Newtype';
-  font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    padding-left: 3.3vw;
+    padding-top: 3vh;
+    padding-right: 3vw;
+    font-family: 'Newtype';
+    font-size: 1.5vw;
 }
 
 .about-social {
-  display: flex;
-  justify-content: space-around;
-  margin: 3vh;
-  cursor: pointer;
-  transform: scale(1.0);
-  transition: .5s;
+    display: flex;
+    justify-content: space-around;
+    margin: 3vh;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: .5s;
 }
 
 .about-social img {
-  width: auto;
-  height: 7vh;
+    width: auto;
+    height: 7vh;
+    transform: scale(1);
+    transition: .5s;
 }
 
 .about-social img:hover {
-  transform: scale(1.05);
-  transition: .5s;
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 /* 2nd box */
 .box-calc {
-  font-family: 'Newtype';
-  font-size: 1.5vw;
-  margin-left: 1.3vw;
-  margin-right: 1vw;
-  margin-top: 5vh;
+    font-family: 'Newtype';
+    font-size: 1.5vw;
+    margin-left: 1.3vw;
+    margin-right: 1vw;
+    margin-top: 5vh;
 }
 
 .box-calc p {
-  margin-top: 2vh;
+    margin-top: 2vh;
 }
 
 .flex-item-type {
-  display: flex;
-  width: 19vw;
-  height: 10vh;
+    display: flex;
+    width: 19vw;
+    height: 10vh;
 }
 
 .flex-item-type div {
-  flex: 0 0 4.2vw;
-  height: 8.4vh;
-  background: rgba(0, 0, 0, .7);
-  margin-top: 1vh;
-  margin-right: 0.5vw;
-  border: 0.2vh solid;
-  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
-  cursor: pointer;
-  transform: scale(1.0);
-  transition: .5s;
+    flex: 0 0 4.2vw;
+    height: 8.4vh;
+    background: rgba(0, 0, 0, .7);
+    margin-top: 1vh;
+    margin-right: 0.5vw;
+    border: 0.2vh solid;
+    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: .5s;
 }
 
 .flex-item-type div img {
-  width: 4vw;
-  height: auto;
+    width: 4.2vw;
+    height: auto;
 }
 
 .flex-item-type div:hover {
-  transform: scale(1.05);
-  transition: .5s;
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 .flex-item-grade {
-  display: flex;
-  width: 24.1vw;
-  height: 10vh;
+    display: flex;
+    width: 24.1vw;
+    height: 10vh;
 }
 
 .flex-item-grade div {
-  flex: 0 0 4.2vw;
-  height: 8.4vh;
-  background: rgba(0, 0, 0, .7);
-  margin-top: 1vh;
-  margin-right: 0.5vw;
-  border: 0.2vh solid;
-  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
-  cursor: pointer;
-  transform: scale(1.0);
-  transition: .5s;
+    flex: 0 0 4.2vw;
+    height: 8.4vh;
+    background: rgba(0, 0, 0, .7);
+    margin-top: 1vh;
+    margin-right: 0.5vw;
+    border: 0.2vh solid;
+    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: .5s;
 }
 
 .flex-item-grade div:hover {
-  transform: scale(1.05);
-  transition: .5s;
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 .dropdown {
-  margin-top: 1vh;
-  position: absolute;
+    margin-top: 1vh;
+    position: absolute;
 }
 
 .dropdown ul {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 14vw;
-  z-index: 10;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14vw;
+    z-index: 10;
 }
 
 .dropdown li {
-  font-weight: bold;
-  width: 14vw;
-  background: rgba(0, 0, 0, 0.7);
-  position: relative;
-  border: 0.2vh solid;
-  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+    font-weight: bold;
+    width: 14vw;
+    height: 7vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    border: 0.2vh solid;
+    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
 }
 
 .dropdown a:hover {
-  box-shadow: inset 0 0 0 4px white;
+    box-shadow: inset 0 0 0 0.3vh white;
 }
 
 .dropdown li a {
-  display: block;
-  padding: 1.8vh;
-  color: white;
-  position: relative;
-  z-index: 20;
+    display: block;
+    padding: 2.1vh;
+    color: white;
+    position: relative;
+    z-index: 20;
 }
 
 .dropdown li a:hover,
 .dropdown li a.hover {
-  background: rgba(0, 0, 0, .9);
-  position: relative;
+    background: rgba(0, 0, 0, .9);
+    position: relative;
 }
 
 .dropdown ul li a {
-  display: block;
-  background: black !important;
+    display: block;
+    background: black !important;
 }
 
 .dropdown ul li a:hover {
-  display: block;
-  background: rgba(0, 0, 0, .9) !important;
+    display: block;
+    background: rgba(0, 0, 0, .9) !important;
 }
 
 .failstacks {
-  margin-top: 10vh;
+    margin-top: 10vh;
 }
 
 input[type="number"] {
-  width: 5vw;
-  background: rgba(0, 0, 0, .4);
-  color: white;
-  height: 5vh;
-  border: 0.2vh solid;
-  border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
-  font-size: 2vw;
-  font-family: 'Newtype';
-  padding-left: 0.3vw;
-  margin-top: 1vh;
+    width: 5vw;
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    height: 5vh;
+    border: 0.2vh solid;
+    border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
+    font-size: 2vw;
+    font-family: 'Newtype';
+    padding-left: 0.3vw;
+    margin-top: 1vh;
 }
 
 input[type=number]::-webkit-inner-spin-button {
-  opacity: 1;
-  height: 4vh;
-  padding: 0.3vh;
-  position: relative;
-  right: 0.4vh;
+    opacity: 1;
+    height: 4vh;
+    padding: 0.3vh;
+    position: relative;
+    right: 0.4vh;
 }
 
 .calculate {
-  margin-top: 0.7vh;
-  margin-left: 12vw;
+    margin-top: 0.7vh;
+    margin-left: 12vw;
 }
 
 .btn-calculate {
-  padding: 2.5vh 4vh;
-  text-align: center;
-  transition: .7s;
-  background-size: 20vw auto;
-  color: white;
-  background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
-  background-position: left bottom;
-  cursor: pointer;
-  right: 36%;
-  top: 77%;
-  border-radius: 1vw;
+    padding: 2.5vh 4vh;
+    text-align: center;
+    transition: .7s;
+    background-size: 20vw auto;
+    color: white;
+    background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
+    background-position: left bottom;
+    cursor: pointer;
+    right: 36%;
+    top: 77%;
+    border-radius: 1vw;
 }
 
 .btn-calculate:hover {
-  background-position: right top;
+    background-position: right top;
 }
 
 /* 3rd box */
 .box-chance img {
-  margin: 3.1vw;
-  height: 43vh;
-  width: auto;
+    margin: 3.1vw;
+    height: 43vh;
+    width: auto;
 }
 
 .box-chance-title {
-  font-family: 'Newtype';
-  font-size: 2vw;
-  color: white;
-  text-align: center;
-  margin-top: -4vh;
-  margin-bottom: 0.8vh;
+    font-family: 'Newtype';
+    font-size: 2vw;
+    color: white;
+    text-align: center;
+    margin-top: -4vh;
+    margin-bottom: 0.8vh;
 }
 
 #myProgress {
-  width: 22vw;
-  background-color: #464646;
-  border-radius: 1vh;
-  margin: 0vh 5vh;
+    width: 22vw;
+    background-color: #464646;
+    border-radius: 1vh;
+    margin: 0vh 5vh;
 }
 
 #myBar {
-  border-radius: 1vh;
-  width: 60%;
-  height: 5.6vh;
-  background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
+    border-radius: 1vh;
+    width: 60%;
+    height: 5.6vh;
+    background-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%);
 }
 
 #percentage {
-  font-family: 'PaybAck';
-  position: absolute;
-  margin-left: 9.3vw;
-  margin-top: 0.6vh;
-  font-size: 2vw;
-  text-align: center;
-  text-shadow: 0.3vh 0 0 #000, 0 -0.3vh 0 #000, 0 0.3vh 0 #000, -0.3vh 0 0 #000;
+    font-family: 'PaybAck';
+    position: absolute;
+    margin-left: 9.3vw;
+    margin-top: 0.6vh;
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 0.3vh 0 0 #000, 0 -0.3vh 0 #000, 0 0.3vh 0 #000, -0.3vh 0 0 #000;
+}
+
+.user-selected {
+    box-shadow: inset 0 0 0 0.3vh white !important;
 }

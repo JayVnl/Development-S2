@@ -1,0 +1,5 @@
+Function calculate() {
+    "use strict";
+
+
+}
