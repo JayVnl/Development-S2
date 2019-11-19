@@ -26,6 +26,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: white;
+  overflow: hidden;
 }
 
 .title {
@@ -135,7 +136,7 @@ body {
 .flex-item-type div {
   flex: 0 0 4.2vw;
   height: 8.4vh;
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, .7);
   margin-top: 1vh;
   margin-right: 0.5vw;
   border: 0.2vh solid;
@@ -164,10 +165,10 @@ body {
 .flex-item-grade div {
   flex: 0 0 4.2vw;
   height: 8.4vh;
-  background: rgba(0,0,0,.7);
+  background: rgba(0, 0, 0, .7);
   margin-top: 1vh;
   margin-right: 0.5vw;
-  border:0.2vh solid;
+  border: 0.2vh solid;
   border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
   cursor: pointer;
   transform: scale(1.0);
@@ -196,20 +197,20 @@ body {
 .dropdown li {
   font-weight: bold;
   width: 14vw;
-  background: white;
+  background: rgba(0, 0, 0, 0.7);
   position: relative;
   border: 0.2vh solid;
   border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
 }
 
 .dropdown a:hover {
-  color: white;
+  box-shadow: inset 0 0 0 4px white;
 }
 
 .dropdown li a {
   display: block;
   padding: 1.8vh;
-  color: black;
+  color: white;
   position: relative;
   z-index: 20;
 }
@@ -222,7 +223,7 @@ body {
 
 .dropdown ul li a {
   display: block;
-  background: white !important;
+  background: black !important;
 }
 
 .dropdown ul li a:hover {
@@ -235,9 +236,9 @@ body {
 }
 
 input[type="number"] {
-  width: 4.5vw;
-  background: rgba(0,0,0,.4);
-  color:white;
+  width: 5vw;
+  background: rgba(0, 0, 0, .4);
+  color: white;
   height: 5vh;
   border: 0.2vh solid;
   border-image: linear-gradient(45deg, rgb(225, 0, 25) 0%, rgb(52, 0, 122) 100%) 1;
@@ -247,8 +248,16 @@ input[type="number"] {
   margin-top: 1vh;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+  height: 4vh;
+  padding: 0.3vh;
+  position: relative;
+  right: 0.4vh;
+}
+
 .calculate {
-  margin-top: 0.7vh; 
+  margin-top: 0.7vh;
   margin-left: 12vw;
 }
 
@@ -263,7 +272,7 @@ input[type="number"] {
   cursor: pointer;
   right: 36%;
   top: 77%;
-  border-radius:1vw;
+  border-radius: 1vw;
 }
 
 .btn-calculate:hover {
