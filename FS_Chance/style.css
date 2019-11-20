@@ -322,6 +322,14 @@ input[type=number]::-webkit-inner-spin-button {
     text-shadow: 0.3vh 0 0 #000, 0 -0.3vh 0 #000, 0 0.3vh 0 #000, -0.3vh 0 0 #000;
 }
 
-.user-selected {
+.user-selected-type {
+    box-shadow: inset 0 0 0 0.3vh white !important;
+}
+
+.user-selected-grade {
+    box-shadow: inset 0 0 0 0.3vh white !important;
+}
+
+.user-selected-level {
     box-shadow: inset 0 0 0 0.3vh white !important;
 }
