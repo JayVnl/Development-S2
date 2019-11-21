@@ -2,6 +2,7 @@ var itemT;
 var itemG;
 var itemL;
 var itemF;
+var percentage;
 
 function itemType(element) {
     itemT = element.getAttribute('name');
@@ -30,7 +31,7 @@ function itemGrade(element) {
 };
 
 function itemLevel(element) {
-    itemL = element.getAttribute('value');
+    itemL = element.getAttribute('name');
     var level = document.getElementsByClassName('user-selected-level');
 
     while (level.length > 0) {
@@ -60,49 +61,31 @@ function failstacks(element) {
 };
 
 function calc() {
-    if (itemT == weapon) {
-        if (itemG == white) {
-            
-        } else if (itemG == green) {
+    if (itemT != undefined && itemG != undefined && itemL != undefined && itemF != undefined) {
+        percentage = 0;
+    if (itemT == "armor" && itemL < 6) {
+        percentage = 90;
+    } else if (itemT == "weapon" && itemL < 8) {
+        percentage = 100;
+    } else if (ItemT == "weapon") {
 
-        } else if (itemG == blue) {
+    }
 
-        } else if (itemG == gold) {
-
-        } else /* itemG = orange */ {
-
-        }
-    } else if (itemT == armor) {
-        if (itemG == white) {
-
-        } else if (itemG == green) {
-
-        } else if (itemG == blue) {
-
-        } else if (itemG == gold) {
-
-        }
-    } else if (itemT == accessory) {
-        if (itemG == white) {
-
-        } else if (itemG == green) {
-
-        } else if (itemG == blue) {
-
-        } else if (itemG == gold) {
-
-        }
-    } else if (itemT == mount) {
-        if (itemG == white) {
-
-        } else if (itemG == green) {
-
-        } else if (itemG == blue) {
-
-        } else if (itemG == gold) {
-
-        }
-    } else {
+    calcChance();
+    showPercentage();
+    }
+    else {
         alert("Please fill in all the fields");
+    }
+}
+
+function showPercentage() {
+    document.getElementById('myBar').style.width = percentage + "%";
+    document.getElementById('percentage').innerHTML = percentage + "%";
+}
+
+function calcChance() {
+    if (percentage != 100) {
+        percentage = percentage + itemF * 0.5;
     }
 }
