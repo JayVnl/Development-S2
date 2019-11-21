@@ -149,8 +149,9 @@ body {
 }
 
 .flex-item-type div img {
-    width: 4.2vw;
+    width: 3.6vw;
     height: auto;
+    margin: 0.6vh;
 }
 
 .flex-item-type div:hover {
@@ -175,6 +176,12 @@ body {
     cursor: pointer;
     transform: scale(1.0);
     transition: .5s;
+}
+
+.flex-item-grade div img {
+    width: 3.9vw;
+    height: auto;
+    margin: 0.27vh;
 }
 
 .flex-item-grade div:hover {

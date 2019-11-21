@@ -64,7 +64,7 @@ function calc() {
     if (itemT != undefined && itemG != undefined && itemL != undefined && itemF != undefined) {
         percentage = 0;
     if (itemT == "armor" && itemL < 6) {
-        percentage = 90;
+        percentage = 100;
     } else if (itemT == "weapon" && itemL < 8) {
         percentage = 100;
     } else if (ItemT == "weapon") {
