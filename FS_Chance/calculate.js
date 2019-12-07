@@ -15,6 +15,9 @@ function itemType(element) {
     element.classList.add('user-selected-type');
     document.getElementById('item-type').innerHTML = "item type: " + itemT;
     console.log('clicked type selected');
+
+    clearInput();
+    checkType();
 };
 
 function itemGrade(element) {
@@ -41,16 +44,18 @@ function itemLevel(element) {
     element.classList.add('user-selected-level');
     if (itemL > 15) {
         if (itemL == 16) {
-            document.getElementById('item-level').innerHTML = "item level: pri";
+            document.getElementById('item-level').innerHTML = "current item level: pri";
         } else if (itemL == 17) {
-            document.getElementById('item-level').innerHTML = "item level: duo";
+            document.getElementById('item-level').innerHTML = "current item level: duo";
         } else if (itemL == 18) {
-            document.getElementById('item-level').innerHTML = "item level: tri";
+            document.getElementById('item-level').innerHTML = "current item level: tri";
         } else if (itemL == 19) {
-            document.getElementById('item-level').innerHTML = "item level: tet";
+            document.getElementById('item-level').innerHTML = "current item level: tet";
         }
+    } else if (itemL == 15 && itemT == "accessory") {
+        document.getElementById('item-level').innerHTML = "current item level: base";
     } else {
-        document.getElementById('item-level').innerHTML = "item level: +" + itemL;
+        document.getElementById('item-level').innerHTML = "current item level: +" + itemL;
     }
     console.log('clicked level selected');
 };
@@ -246,15 +251,85 @@ function calc() {
     } else {
         alert("Please fill in all the fields");
     }
-}
+};
 
 function showPercentage() {
-    document.getElementById('myBar').style.width = percentage + "%";
-    document.getElementById('percentage').innerHTML = percentage + "%";
-}
+    document.getElementById('myBar').style.width = percentageRounded + "%";
+    document.getElementById('percentage').innerHTML = percentageRounded + "%";
+};
+
+var percentageRounded;
 
 function calcChance() {
     if (percentage != 100) {
         percentage = percentage + itemF * 0.5;
+        percentageRounded = percentage.toFixed(2);
+    } else {
+        percentageRounded = percentage.toFixed(0);
     }
+};
+
+var white = document.getElementById('white');
+var green = document.getElementById('green');
+var blue = document.getElementById('blue');
+var yellow = document.getElementById('yellow');
+var orange = document.getElementById('orange');
+
+function checkType() {
+    var ul = document.getElementById("dropdown");
+    var items = ul.getElementsByTagName("li");
+
+    if (itemT == "weapon") {
+        white.style.display = 'block';
+        green.style.display = 'block';
+        blue.style.display = 'block';
+        yellow.style.display = 'block';
+        orange.style.display = 'block';
+
+        for (var y = 0; y < items.length; ++y) {
+            items[y].style.display = "block";
+        }
+        document.getElementsByTagName("a")[19].innerHTML = "+15";
+    } else if (itemT == "armor") {
+        white.style.display = 'block';
+        green.style.display = 'block';
+        blue.style.display = 'block';
+        yellow.style.display = 'block';
+        orange.style.display = 'none';
+
+        for (var y = 0; y < items.length; ++y) {
+            items[y].style.display = "block";
+        }
+        document.getElementsByTagName("a")[19].innerHTML = "+15";
+    } else if (itemT == "accessory") {
+        white.style.display = 'none';
+        green.style.display = 'block';
+        blue.style.display = 'block';
+        yellow.style.display = 'block';
+        orange.style.display = 'none';
+
+        for (var y = 0; y < items.length - 5; ++y) {
+            items[y].style.display = "none";
+        }
+        document.getElementsByTagName("a")[19].innerHTML = "base";
+    }
+};
+
+function clearInput() {
+    var grades = ["white", "green", "blue", "yellow", "orange"];
+    for (var x = 0; x < grades.length; x++) {
+        var element = document.getElementById(grades[x]).classList.remove('user-selected-grade');
+    }
+    document.getElementById('item-grade').innerHTML = "item grade:";
+    console.log("grades cleared");
+
+    var ul = document.getElementById("dropdown");
+    var items = ul.getElementsByTagName("a");
+    for (var y = 0; y < items.length; ++y) {
+        items[y].classList.remove('user-selected-level');
+    }
+    document.getElementById('item-level').innerHTML = "current item level:"
+    
+    document.getElementById('updown').value = 0;
+    document.getElementById('failstacks').innerHTML = "failstacks:";
 }
