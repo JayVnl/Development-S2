@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title> DEV Learning Objectives </title>
+</head>
+
+<body>
+    <div>
+        <p>Index of "Jay" in the sentence: At the supermarket i saw Jay.</p>
+        <button onclick="indexOf()">Show index</button>
+        <div id="indexOf"></div>
+    </div>
+    <div>
+        <p>Slice method of the string: Pizza, Melon, Orange</p>
+        <button onclick="slice()">Show slice</button>
+        <div id="slice"></div>
+    </div>
+    <div>
+        <p>Substr method of the string: Pizza, Melon, Orange</p>
+        <button onclick="substr()">Show substr</button>
+        <div id="substr"></div>
+    </div>
+    <div>
+        <p>Replace method of the string: I eat at McDonalds, changing McDonalds to KFC</p>
+        <button onclick="replace()">Show substr</button>
+        <div id="replace"></div>
+    </div>
+    <div>
+        <p>Changing Apple to APPLE</p>
+        <button onclick="uppercase()">Show substr</button>
+        <div id="ucase"></div>
+    </div>
+</body>
+
+<script>
+    function indexOf() {
+        var a = "At the supermarket i saw Jay.";
+        var b = str.indexOf('Jay');
+        document.getElementById('indexOf').innerHTML = b;
+    };
+    
+    function slice() {
+        var a = "Pizza, Melon, Orange";
+        var b = a.slice(7, 12);
+        document.getElementById('slice').innerHTML = b;
+    }
+    
+    function substr() {
+        var a = "Pizza, Melon, Orange";
+        var b = a.substr(14);
+        document.getElementById('substr').innerHTML = b;
+    }
+    
+    function replace() {
+        var a = "I eat at McDonalds";
+        var b = a.replace("McDonalds", "KFC");
+        document.getElementById('replace').innerHTML = b;
+    }
+    
+    function uppercase() {
+        var a = "Apple";
+        var b = a.toUpperCase();
+        document.getElementById('ucase').innerHTML = b;
+    }
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Events </title>
+</head>
+
+<body id="body">
+    <div><p>Press some buttons</p>
+        <button onclick="onClick()">onClick</button>
+    </div>
+    <div id="main"></div>
+</body>
+
+<script>
+    var main = document.getElementById('main');
+    var body = document.getElementById('body');
+
+    function onClick() {
+        body.style.background = "white";
+        body.onchange = body.style.color = "black";
+        main.innerHTML = "Background changed to white and the color to black";
+    }
+    
+</script></html>
