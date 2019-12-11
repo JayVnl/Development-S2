@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Datatypes </title>
+</head>
+
+<body id="main">
+</body>
+
+<script>
+    var x; // undefined
+    var number = 10;
+    var string = "text";
+    var object = {
+        firstName: "Bob",
+        lastName: "Bisma"
+    };
+    var smallNumber = 10e-5;
+    var bigNumber = 10e5;
+
+    var summary = [x, number, string, object.firstName, object.lastName, smallNumber, bigNumber];
+
+    document.getElementById('main').innerHTML = summary;
+
+    document.getElementById('main').innerHTML = summary + " " + typeof smallNumber;
+</script></html>

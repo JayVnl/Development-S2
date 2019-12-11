@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Operators </title>
+</head>
+
+<body>
+    <div>
+        <button onclick="arithmetic()">Arithmetic</button>
+        <button onclick="assignment()">Assignment</button>
+    </div>
+    <div id="main"></div>
+</body>
+
+<script>
+    // Arithmetic operators
+    var a = 5;
+    var b = 10;
+
+    var arithmeticO = [a + b, b - a, a * b, b ** a, b / a, b % a];
+    var assignmentO = [a = b, a += b, a -= b, a *= b, a /= b, a %= b, a **= b];
+
+    function arithmetic() {
+        document.getElementById('main').innerHTML = arithmeticO;
+    };
+
+    function assignment() {
+        document.getElementById('main').innerHTML = assignmentO;
+    };
+</script></html>
