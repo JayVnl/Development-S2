@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #262626;
+  background: #464646;
   height: 100vh;
   width: 100vw;
 }
@@ -24,4 +24,19 @@ body {
   height: 8vw;
   background: white;
   margin: 1%;
+  border-radius: 1vh;
+}
+
+.inner-box {
+  width: 7vw;
+  height: 7vw;
+  background: #262626;
+  margin: 6.6%;
+  border-radius: 1vh;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.inner-box:hover {
+  transform: scale(1.07);
+  transition: 0.3s ease-in-out;
 }
