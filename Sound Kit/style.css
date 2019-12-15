@@ -1,57 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background: #464646;
+  background: url("explosion.jpg");
   height: 100vh;
   width: 100vw;
+  display: flex;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.instruction {
+  width: 42vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  margin-left: 2%;
+  background: rgba(0,0,0,0.7);
+  font-family: 'Manjari';
+  padding: 2%;
+}
+
+.instruction h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.instruction p {
+  font-size: 1.5vw;
 }
 
 #container {
   display: flex;
   height: auto;
-  width: 44.5vw;
+  width: 39vw;
   flex-flow: row wrap;
-  margin: 0 auto;
   align-content: flex-start;
   justify-content: center;
   border: 1vh solid white;
-  background: #262626;
+  background: rgba(0,0,0,0.7);
   padding: 1%;
+  border-radius: 1vh;
+
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
 }
 
 .box {
-  width: 8vw;
-  height: 8vw;
+  width: 7vw;
+  height: 7vw;
   background: white;
   margin: 1%;
   border-radius: 1vh;
 }
 
 .inner-box {
-  width: 7vw;
-  height: 7vw;
+  width: 6vw;
+  height: 6vw;
   background: #262626;
-  margin: 0.6vh;
+  margin: 6.3%;
   border-radius: 1vh;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .animation {
-  animation: test .4s;
+  animation: pressed .4s;
 }
 
-@keyframes test {
+@keyframes pressed {
   0% {
     background-color: #262626;
     transform: scale(1);
   }
 
   50% {
-    background-color: red;
+    background-color: #36EBFF;
     transform: scale(1.07);
   }
 
